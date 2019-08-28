@@ -1,0 +1,7 @@
+{
+  "server": {
+    "signaling": {
+      "grpc_hosts": ":PORT"
+    }
+  }
+}

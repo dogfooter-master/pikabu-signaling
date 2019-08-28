@@ -1,0 +1,14 @@
+version: "3.2"
+services:
+  pikabu_signaling:
+    build:
+      context: .
+      dockerfile: signaling/Dockerfile
+    restart: always
+    volumes:
+    - .:/go/src/pikabu-signaling
+    container_name: pikabu_signaling
+   #ports:
+   #- 8800:8081
+   #- 8801:8082
+    image: dermaster/pikabu-signaling-dev:latest
